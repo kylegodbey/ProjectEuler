@@ -6,6 +6,9 @@ while [ $COUNTER -eq 0 ]; do
         echo $i
         let COUNTER=COUNTER+1
     fi
+    if [ $(($i % 10000000)) -eq 0 ]; then
+        echo $i
+    fi
     let i=i+20
 done
 
